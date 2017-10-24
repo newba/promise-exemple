@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introduction à Vue JS</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
+    <script src="js/promise.js"></script>
+</head>
+<body>
+    <h1>Bienvenue à Vue.JS</h1>
+    <div id="app">
+        <button class="button" id="aff-dialog">
+            Déclencher la modale
+        </button>
+        <div class="modal" id="my-dialog">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Modal title</p>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    SVP entrez un nombre:
+                    <input class="input" type="text" id="input">
+                </section>
+                <footer class="modal-card-foot">
+                    <button class="button is-success" id="save">
+                        Save changes
+                    </button>
+                    <button class="button">Cancel</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/app.js"></script>
+</html>
